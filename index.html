@@ -161,6 +161,16 @@
         a:hover {
             text-decoration: underline;
         }
+        .notice {
+            border: 1px solid rgba(18, 60, 49, 0.14);
+            border-radius: 18px;
+            background: #f3f7f4;
+            margin: 24px 0;
+            padding: 18px 20px;
+        }
+        .notice p:last-child {
+            margin-bottom: 0;
+        }
         .site-footer {
             margin: 34px 0 14px;
             color: #888;
@@ -205,7 +215,7 @@
     <main>
     <a class="back-link" href="https://spexa.space/">← Back to Spexa</a>
     <h1>Privacy Policy</h1>
-    <p>Last updated: July 14, 2026</p>
+    <p>Last updated: July 30, 2026</p>
 
     <h2>1. Acceptance of PP</h2>
     <p>1.1. This Privacy Policy explains and lists the transparency information regarding what personal data is collected (Section 3) when you use our Service "Spexa: English Lessons, Learn &amp; Speak" and the services provided through it (together "Service"), how such personal data will be processed (Section 4) and which rights you have with respect to your personal data (Section 9).</p>
@@ -215,6 +225,12 @@
     <p>1.3. We do not knowingly process personal data from persons under 16 years of age. If you learn that anyone younger than 16 has provided us with personal data, please contact us at <a href="mailto:support@spexa.space">support@spexa.space</a>.</p>
 
     <p>1.4. If any questions remain unanswered or you would like to exercise your privacy rights, please also contact us at <a href="mailto:support@spexa.space">support@spexa.space</a>.</p>
+
+    <div class="notice">
+        <h2>AI transparency summary</h2>
+        <p>Spexa uses AI to understand your speech, reply to your messages, and score pronunciation. Before Spexa sends your speech, typed messages, lesson answers, language settings, or learning context for AI processing, the app asks for your permission. If you do not allow it, those AI features will not send your speech or text.</p>
+        <p>When allowed, this information is processed through Spexa's secure backend and AI providers Google/Gemini and OpenAI only to provide transcription, tutor replies, pronunciation scoring, speaking feedback, and tutor audio. Spexa does not sell your personal data.</p>
+    </div>
 
     <h2>2. Data controller</h2>
     <p>Spexa ("we", "us", or "our") is the data controller of your personal data. You can reach us at <a href="mailto:support@spexa.space">support@spexa.space</a>.</p>
@@ -232,9 +248,11 @@
 
     <p>3.2.2. Registration and learning profile data: You provide us with this category of information during onboarding and while using the Service. This may include your target language (the language you want to learn), your native language, your proficiency level, your learning goals, your daily study commitment and preferred study time, your interests, and any other preferences you select.</p>
 
-    <p>3.2.3. Voice, text, and pronunciation data: When you use the AI tutor and pronunciation features, you provide us with text messages and short voice recordings. These recordings are sent to our speech-recognition and scoring providers (see Section 5.2) to transcribe your speech, score your pronunciation, and generate a tutor response. We process these recordings transiently and do not retain the raw audio files on our own servers beyond the time needed to return a result; however, our third-party AI providers may retain requests in accordance with their own policies.</p>
+    <p>3.2.3. AI speech, text, lesson, and pronunciation data: When you use AI tutor, lesson speaking, and pronunciation features, you may provide text messages, short voice recordings, lesson answers, pronunciation attempts, selected language, language settings, and learning context. After you accept the in-app AI processing permission, this data may be sent through our backend to AI providers identified in Section 5.2 so your speech can be transcribed, your pronunciation can be scored, and tutor responses or tutor audio can be generated.</p>
 
-    <p>3.2.4. Communication with support team: When you contact our support team, you may also provide us with some personal information.</p>
+    <p>3.2.4. AI permission choice: We store whether you allowed AI processing so we can avoid asking again before the same AI data flow. If you do not allow AI processing, Spexa does not send your speech or typed messages to third-party AI providers for that feature.</p>
+
+    <p>3.2.5. Communication with support team: When you contact our support team, you may also provide us with some personal information.</p>
 
     <h3>3.3. Data we collect automatically</h3>
     <p>3.3.1. Device, region, and attribution data: We collect language settings, the country code inferred from your device locale (used to localize example names, cities, and country references inside lessons so the content feels culturally relevant), Internet Protocol address, time zone, type and model of a device, device settings, OS version, Internet service provider, mobile carrier, hardware ID, app instance identifiers, and advertising or attribution identifiers where available and permitted by your device settings. This may include App Tracking Transparency status on iOS, IDFA when permission is granted, Google Advertising ID on Android where available, AppsFlyer identifiers, campaign parameters, and attribution events connected to installs, subscriptions, and trial starts. We do not collect precise GPS location.</p>
@@ -280,8 +298,8 @@
                 <td>Performance of the contract. Your consent.</td>
             </tr>
             <tr>
-                <td>To provide a personalized AI tutoring experience: to transcribe your speech, generate tutor responses, score pronunciation, and adapt the conversation to your profile.</td>
-                <td>Voice recordings, text messages, target language, native language, proficiency level.</td>
+                <td>To provide AI feedback and a personalized AI tutoring experience after you allow AI processing: to transcribe your speech, generate tutor responses, score pronunciation, provide speaking feedback, and generate tutor audio.</td>
+                <td>Voice recordings, typed messages, lesson answers, pronunciation attempts, target language, native language, proficiency level, language settings, and learning context.</td>
                 <td>Performance of the contract. Your consent.</td>
             </tr>
             <tr>
@@ -321,7 +339,8 @@
     </ol>
 
     <h2>5. Third-party services and other disclosures of data</h2>
-    <p>5.1. Apart from our employees, contractors, and affiliated companies (if any), we share information with the range of third parties that help operate, provide, improve, integrate, customize, support, and market our Service. We require all third parties to respect the security of your personal data and treat it under the law. The types of third parties we share information with include, in particular:</p>
+    <p><strong>AI service providers:</strong> After you accept the in-app AI processing permission, Spexa may send your speech, typed messages, lesson answers, pronunciation attempts, selected language, language settings, and learning context through Spexa's secure backend to Google/Gemini and OpenAI. We use this only to provide transcription, tutor replies, pronunciation scoring, speaking feedback, and tutor audio. Spexa does not sell your personal data.</p>
+    <p>5.1. Apart from our employees, contractors, and affiliated companies (if any), we share information with the range of third parties that help operate, provide, improve, integrate, customize, support, and market our Service. We require third-party processors that handle data for Spexa to provide the same or equivalent protection described in this Privacy Policy and to process personal data only for the purposes we authorize. The types of third parties we share information with include, in particular:</p>
 
     <p>5.2. Service providers (sub-processors): We engage the partners mentioned below to carry out specific services or business functions on our behalf using their technologies and resources, based on our instructions. We do not allow our third-party service providers to use your personal data for their own purposes and only permit them to process your personal data for specified reasons defined in this Privacy Policy.</p>
 
@@ -350,7 +369,7 @@
             <tr>
                 <td>Google LLC</td>
                 <td>Google Gemini API</td>
-                <td>Speech recognition, conversational AI, and pronunciation scoring for voice interactions</td>
+                <td>Speech recognition, conversational AI, pronunciation scoring, speaking feedback, and lesson-language feedback after in-app AI processing permission</td>
                 <td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td>
             </tr>
             <tr>
@@ -362,7 +381,7 @@
             <tr>
                 <td>OpenAI, L.L.C.</td>
                 <td>OpenAI API (Text-to-Speech, conversational models)</td>
-                <td>Synthesizing AI tutor speech and powering supporting language features</td>
+                <td>Synthesizing AI tutor speech and powering supporting AI language features after in-app AI processing permission</td>
                 <td><a href="https://openai.com/policies/row-privacy-policy/">https://openai.com/policies/row-privacy-policy/</a></td>
             </tr>
             <tr>
@@ -410,7 +429,7 @@
 
     <p>7.4. We will store your personal data for as long as it is reasonably necessary for achieving the purposes set forth in the Terms of Use and this Privacy Policy, which includes the period during which you have an account with the Service. We will also retain and use your personal data as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements. When you delete your account, we delete or anonymize the personal data associated with it, except where we are legally required to retain specific records.</p>
 
-    <p>7.5. Voice recordings used for pronunciation scoring and AI tutor interactions are transient by design — we do not persist the raw audio files on our own servers once the response has been returned to you. The corresponding text transcripts may be stored as part of your lesson progress or conversation history so you can review earlier sessions. Our AI sub-processors (see Section 5.2) may retain requests according to their own policies.</p>
+    <p>7.5. Voice recordings used for AI tutor, lesson speaking, and pronunciation scoring are transient by design — we do not persist the raw audio files on our own servers once the response has been returned to you. These AI features send speech, typed messages, lesson answers, pronunciation attempts, language settings, and learning context to AI sub-processors only after in-app AI processing permission. The corresponding text transcripts may be stored as part of your lesson progress or conversation history so you can review earlier sessions. Our AI sub-processors (see Section 5.2) may retain and process requests according to their own policies and data-protection commitments.</p>
 
     <p>7.6. To determine the appropriate retention period for personal data, we consider the amount, nature, and sensitivity of the personal data, the potential risk of harm from unauthorized use or disclosure of your data, the purposes for which we process your data, whether we can achieve those purposes through other means, and the applicable legal requirements.</p>
 
